@@ -1,7 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import { extendTheme } from "@chakra-ui/react";
-import { Chakra } from "./Chakra";
 
 const colors = {
   brandBelemGas: {
@@ -23,13 +22,10 @@ const theme = extendTheme({ colors, config });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Chakra cookies={pageProps.cookies}>
-      <ChakraProvider theme={theme} resetCSS>
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </Chakra>
+    <ChakraProvider theme={theme} resetCSS>
+      <Component {...pageProps} />
+    </ChakraProvider>
   );
 }
 
 export default MyApp;
-export { getServerSideProps } from "./Chakra";
