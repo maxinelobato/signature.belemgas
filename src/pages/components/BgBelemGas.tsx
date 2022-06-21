@@ -5,7 +5,7 @@ export function BgBelemGas(props: BoxProps) {
     <Box
       {...props}
       minH="100vh"
-      bgGradient="linear-gradient(to right, brandBelemGas.orange500, brandBelemGas.yellow300 ,brandBelemGas.orange500)"
+      bgGradient="linear(to-r, brandBelemGas.orange500, brandBelemGas.yellow300, brandBelemGas.orange500)"
     />
   );
 }
