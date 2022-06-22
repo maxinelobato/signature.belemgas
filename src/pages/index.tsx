@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { Box } from "@chakra-ui/react";
 import SectionOne from "./components/SectionOne";
-import { SectionTwo } from "./components/SectionTwo";
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +10,6 @@ const Home: NextPage = () => {
         bgGradient="linear(to-r, brandBelemGas.orange500, brandBelemGas.yellow300, brandBelemGas.orange500, brandBelemGas.red500)"
       >
         <SectionOne />
-        <SectionTwo />
       </Box>
     </>
   );
