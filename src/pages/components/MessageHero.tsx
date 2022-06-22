@@ -7,7 +7,6 @@ import {
   Image,
   Box,
 } from "@chakra-ui/react";
-import ButtonCTA from "./ButtonCTA";
 import Navbar from "./Navbar";
 
 export default function MessageHero() {

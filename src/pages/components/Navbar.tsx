@@ -1,12 +1,4 @@
-import {
-  Box,
-  Flex,
-  Grid,
-  GridItem,
-  Stack,
-  Text,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import { Flex, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 import ButtonCTA from "./ButtonCTA";
 import "@fontsource/fredoka-one";
 
