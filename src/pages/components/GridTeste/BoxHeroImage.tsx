@@ -1,4 +1,4 @@
-import { Box, BoxProps, Center, Container } from "@chakra-ui/react";
+import { Box, BoxProps, Container } from "@chakra-ui/react";
 
 export const BoxHeroImage = (props: BoxProps) => (
   <Container>
