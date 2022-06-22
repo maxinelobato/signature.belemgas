@@ -1,6 +1,6 @@
 import { chakra, Text } from "@chakra-ui/react";
 
-export function CopyHeroH1() {
+export default function CopyHeroH1() {
   return (
     <chakra.h1
       mb={6}
