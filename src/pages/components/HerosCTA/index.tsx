@@ -7,22 +7,10 @@ import {
   Image,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import HeroCopy from "../CopysCTA/CopyHero";
 
-export default function Hero() {
+export default function HerosCTA() {
   return (
     <>
-      <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
-        <Flex
-          w={"full"}
-          h={"100vh"}
-          bgImage={"/img/liquigas.svg"}
-          bgSize={"cover"}
-          bgPosition={"center center"}
-        >
-          <HeroCopy />
-        </Flex>
-      </Stack>
       {/**SECTION TWO */}
       <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
         <Flex p={8} flex={1} align={"center"} justify={"center"}>
