@@ -9,17 +9,17 @@ export default function ButtonWhatsapp(props: ButtonProps) {
       px={10}
       fontSize={"lg"}
       rounded={"lg"}
-      bgColor="green.900"
+      bgColor="brandBelemGas.orange500"
       size="lg"
       boxShadow={
-        "0px 1px 25px -5px rgb(154 230 180 / 88%), 0 10px 10px -5px rgb(154 230 180 / 83%)"
+        "0px 1px 25px -5px rgb(222 112 34 / 88%), 0 10px 10px -5px rgb(222 112 34 / 83%)"
       }
       _hover={{
-        bg: "green.500",
-        color: "green.100",
+        bg: "brandBelemGas.orange100",
+        color: "brandBelemGas.orange500",
       }}
       _focus={{
-        bg: "blue.500",
+        bg: "brandBelemGas.orange500",
       }}
     >
       (91) 99999-9999

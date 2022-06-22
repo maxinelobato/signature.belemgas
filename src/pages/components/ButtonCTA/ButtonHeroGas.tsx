@@ -13,8 +13,8 @@ export default function ButtonHeroGas(props: ButtonProps) {
       }}
       spacing={2}
       justifyContent={{
-        sm: "center",
-        md: "center",
+        sm: "left",
+        md: "left",
       }}
     >
       <Button
