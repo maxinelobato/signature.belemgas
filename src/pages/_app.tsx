@@ -10,6 +10,10 @@ const colors = {
     yellow500: "#D69E2E",
     red500: "#E53E3E",
     green600: "#2F855A",
+    green200: "#9AE6B4",
+    blue200: "#90CDF4",
+    gray900: "#171923",
+    gray700: "#2D3748",
   },
 };
 

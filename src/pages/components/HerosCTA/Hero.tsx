@@ -7,9 +7,9 @@ import {
   Image,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import MessageHero from "./MessageHero";
+import HeroCopy from "../CopysCTA/CopyHero";
 
-export default function SectionOne() {
+export default function Hero() {
   return (
     <>
       <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
@@ -20,7 +20,7 @@ export default function SectionOne() {
           bgSize={"cover"}
           bgPosition={"center center"}
         >
-          <MessageHero />
+          <HeroCopy />
         </Flex>
       </Stack>
       {/**SECTION TWO */}

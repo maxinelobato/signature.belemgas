@@ -1,16 +1,16 @@
 import { Button, ButtonProps } from "@chakra-ui/react";
 import { BsWhatsapp } from "react-icons/bs";
 
-export default function ButtonCTA(props: ButtonProps) {
+export default function ButtonWhatsapp(props: ButtonProps) {
   return (
     <Button
       {...props}
+      leftIcon={<BsWhatsapp size={30} />}
       px={10}
       fontSize={"lg"}
       rounded={"lg"}
       bgColor="green.900"
       size="lg"
-      leftIcon={<BsWhatsapp size={30} />}
       boxShadow={
         "0px 1px 25px -5px rgb(154 230 180 / 88%), 0 10px 10px -5px rgb(154 230 180 / 83%)"
       }
