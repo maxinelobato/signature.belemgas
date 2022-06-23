@@ -3,9 +3,11 @@ import { Stack, StackProps } from "@chakra-ui/react";
 export default function StackPropPage(props: StackProps) {
   return (
     <Stack
-      transition="all 0.15s ease-out"
-      minH={"100vh"}
-      direction={{ base: "column", md: "row" }}
+      bgImage="img/liquigas.svg"
+      bgSize="cover"
+      bgPosition="center center"
+      bgRepeat="no-repeat"
+      minH="100vh"
       {...props}
     />
   );
