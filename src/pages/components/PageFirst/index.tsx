@@ -17,8 +17,8 @@ export default function PageFirst() {
       direction={{ base: "column", md: "row" }}
       py={{ base: 0, md: 10 }}
     >
-      <Flex p={16} flex={1} align={"center"} justify={"center"}>
-        <Stack w="full" maxW="6xl">
+      <Flex p={16} flex={1} align={"left"} justify={"left"}>
+        <Stack w="full" maxW="container.lg">
           <Box maxW="full">
             <Heading
               textAlign={"left"}
@@ -27,7 +27,8 @@ export default function PageFirst() {
               fontFamily="Krona One"
               fontSize="5xl"
             >
-              Esqueceu de abastecer o gás? Saiba que podemos levar até você!
+              Você vive esquecendo de abastecer o gás? Quem já não passou por
+              isso?
             </Heading>
             <Text
               color={"blackAlpha.700"}
@@ -38,8 +39,7 @@ export default function PageFirst() {
               size="md"
               fontSize="25"
             >
-              Entre em contato com o nosso serviço de DELIVERY e iremos levar
-              até você no conforto da sua casa.
+              Sabendo disso, nós levamos até a sua casa!
             </Text>
             <Stack
               py={10}
