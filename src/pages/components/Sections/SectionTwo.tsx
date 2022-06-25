@@ -7,7 +7,6 @@ import {
   Image,
   Box,
 } from "@chakra-ui/react";
-import Bounce from "react-reveal/Bounce";
 
 export default function SectionTwo() {
   return (
@@ -16,30 +15,26 @@ export default function SectionTwo() {
         <Flex p={16} flex={1} align={"center"} justify={"center"}>
           <Box bgColor="brand.green800" rounded="lg" p={10}>
             <Stack spacing={6} w={"full"} maxW={"lg"}>
-              <Bounce left duration={500}>
-                <Heading
-                  textAlign={"left"}
-                  mb={4}
-                  color="whiteAlpha.800"
-                  fontFamily="Krona One"
-                  fontSize="5xl"
-                >
-                  Uma empresa familiar, com o único objetivo de entregar à todas
-                </Heading>
-              </Bounce>
-              <Bounce left duration={600}>
-                <Text
-                  textAlign={"left"}
-                  py={3}
-                  color="brand.orange400"
-                  fontFamily="Krona One"
-                  as="h2"
-                  size="md"
-                  fontSize="25"
-                >
-                  as famílias de belém do Pará.
-                </Text>
-              </Bounce>
+              <Heading
+                textAlign={"left"}
+                mb={4}
+                color="whiteAlpha.800"
+                fontFamily="Krona One"
+                fontSize="5xl"
+              >
+                Uma empresa familiar, com o único objetivo de entregar à todas
+              </Heading>
+              <Text
+                textAlign={"left"}
+                py={3}
+                color="brand.orange400"
+                fontFamily="Krona One"
+                as="h2"
+                size="md"
+                fontSize="25"
+              >
+                as famílias de belém do Pará.
+              </Text>
               <Stack direction={{ base: "column", md: "row" }} spacing={4}>
                 <Button
                   rounded={"full"}

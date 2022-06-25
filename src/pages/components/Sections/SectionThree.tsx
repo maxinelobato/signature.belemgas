@@ -13,8 +13,6 @@ import {
 } from "react-icons/bs";
 import { MdCreditScore } from "react-icons/md";
 import React from "react";
-import Bounce from "react-reveal/Bounce";
-import Zoom from "react-reveal/Zoom";
 import { motion } from "framer-motion";
 
 interface StatsCardProps {
@@ -60,39 +58,32 @@ function StatsCard(props: StatsCardProps) {
 export default function SectionThree() {
   return (
     <Box maxW="7xl" mx={"auto"} pt={5} px={{ base: 2, sm: 12, md: 17 }} p={16}>
-      <Bounce left duration={500}>
-        <chakra.h1
-          textAlign={"center"}
-          fontSize={"4xl"}
-          py={10}
-          fontWeight={"bold"}
-          fontFamily={"Krona One"}
-        >
-          A Belém Gás facilita para você
-        </chakra.h1>
-      </Bounce>
+      <chakra.h1
+        textAlign={"center"}
+        fontSize={"4xl"}
+        py={10}
+        fontWeight={"bold"}
+        fontFamily={"Krona One"}
+      >
+        A Belém Gás facilita para você
+      </chakra.h1>
+
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
-        <Zoom top duration={600}>
-          <StatsCard
-            stat={"Cartão de Crédito"}
-            label={"Até 2x SEM JUROS"}
-            icon={<BsFillCreditCard2BackFill size={"3em"} />}
-          />
-        </Zoom>
-        <Zoom top duration={700}>
-          <StatsCard
-            stat={"Cartão de Débito"}
-            label={"À Vista"}
-            icon={<BsFillCreditCard2FrontFill size={"3em"} />}
-          />
-        </Zoom>
-        <Zoom top duration={800}>
-          <StatsCard
-            stat={"Pix"}
-            label={"À Vista"}
-            icon={<MdCreditScore size={"3em"} />}
-          />
-        </Zoom>
+        <StatsCard
+          stat={"Cartão de Crédito"}
+          label={"Até 2x SEM JUROS"}
+          icon={<BsFillCreditCard2BackFill size={"3em"} />}
+        />
+        <StatsCard
+          stat={"Cartão de Débito"}
+          label={"À Vista"}
+          icon={<BsFillCreditCard2FrontFill size={"3em"} />}
+        />
+        <StatsCard
+          stat={"Pix"}
+          label={"À Vista"}
+          icon={<MdCreditScore size={"3em"} />}
+        />
       </SimpleGrid>
     </Box>
   );
