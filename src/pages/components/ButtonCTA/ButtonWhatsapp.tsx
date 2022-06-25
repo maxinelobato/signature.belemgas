@@ -1,15 +1,21 @@
-import { Button, ButtonProps, Flex } from "@chakra-ui/react";
+import { Button, ButtonProps } from "@chakra-ui/react";
 import { BsWhatsapp } from "react-icons/bs";
 
 export default function ButtonWhatsapp(props: ButtonProps) {
   return (
     <Button
-      colorScheme={"orange"}
+      bgColor="brand.green400"
       shadow={"dark-lg"}
       size="lg"
-      _focus={{ boxShadow: "none" }}
       w="fit-content"
       leftIcon={<BsWhatsapp size={20} />}
+      _hover={{
+        bg: "green.500",
+        color: "green.100",
+      }}
+      boxShadow={
+        "0px 1px 25px -5px rgb(72 186 119 / 100%), 0 10px 10px -5px rgb(72 186 119 / 43%)"
+      }
       {...props}
     >
       WhatsApp

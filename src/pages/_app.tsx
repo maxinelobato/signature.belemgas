@@ -1,6 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import { extendTheme } from "@chakra-ui/react";
+import { ButtonFramer } from "./components/ButtonCTA/ButtonFramer";
 
 const theme = extendTheme({
   config: {
@@ -8,17 +9,11 @@ const theme = extendTheme({
     useSystemColorMode: true,
   },
   colors: {
-    brandBelemGas: {
-      orange100: "#FEEBC8",
-      orange500: "#DD6B20",
-      yellow300: "#F6E05E",
-      yellow500: "#D69E2E",
-      red500: "#E53E3E",
-      green600: "#2F855A",
-      green200: "#9AE6B4",
-      blue200: "#90CDF4",
-      gray900: "#171923",
-      gray700: "#2D3748",
+    brand: {
+      orange400: "#ED8936",
+      green400: "#48BB78",
+      green800: "#22543D",
+      whiteAlpha900: "255 255 255 0.92",
     },
   },
 });
@@ -26,6 +21,7 @@ const theme = extendTheme({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme} resetCSS>
+      <ButtonFramer />
       <Component {...pageProps} />
     </ChakraProvider>
   );
