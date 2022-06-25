@@ -1,42 +1,49 @@
 import { Stack, Flex, Text, Heading, Box } from "@chakra-ui/react";
 import ButtonCallNow from "../ButtonCTA/ButtonCallNow";
+import "@fontsource/krona-one";
 
 export default function SectionOne() {
   return (
-    <Stack
-      spacing={{ base: 8, md: 14 }}
-      direction={{ base: "column", md: "row" }}
-      py={{ base: 0, md: 10 }}
-    >
-      <Flex p={8} flex={1} align={"left"} justify={"left"}>
-        <Stack w="full" maxW="4xl">
-          <Box maxW="full" px="5rem">
-            <Box bgColor="brand.green800" rounded="lg" p={4}>
-              <Heading
-                textAlign={"left"}
-                mb={4}
-                color="whiteAlpha.800"
-                fontFamily="Krona One"
-                fontSize="5xl"
-              >
-                Acabou o gás bem na hora da fome?
-              </Heading>
+    <Stack minH={"50vh"} direction={{ base: "column", md: "row" }}>
+      <Flex p={16} flex={1} align={"center"} justify={"center"}>
+        <Box
+          style={{
+            borderRadius: "0 5% 80% 0",
+          }}
+          bgGradient="linear(to-r, transparent, brand.green800)"
+          rounded="lg"
+          p={10}
+          display={"flex"}
+        >
+          <Stack spacing={0} w={"full"} maxW={"lg"}>
+            <Heading
+              textAlign={"left"}
+              color="whiteAlpha.800"
+              fontFamily="Krona One"
+              textTransform={"uppercase"}
+              fontWeight={600}
+              fontSize={{ base: "3xl", sm: "4xl", md: "5xl" }}
+              lineHeight={"110%"}
+            >
+              Acabou o gás bem na hora da fome? <br />
               <Text
-                textAlign={"left"}
-                py={3}
-                color="brand.orange400"
-                fontFamily="Krona One"
-                as="h2"
-                size="md"
-                fontSize="25"
+                fontFamily={"Krona One"}
+                as={"span"}
+                textTransform={"uppercase"}
+                lineHeight={"90%"}
+                fontSize={"2xl"}
+                color={"orange.200"}
               >
                 Não fique em pânico! O seu gás está na Belém Gás.
               </Text>
-            </Box>
-            <ButtonCallNow />
-          </Box>
-        </Stack>
+            </Heading>
+            <Stack direction={{ base: "column", md: "row" }} spacing={4}>
+              <ButtonCallNow />
+            </Stack>
+          </Stack>
+        </Box>
       </Flex>
+      <Flex flex={1}></Flex>
     </Stack>
   );
 }

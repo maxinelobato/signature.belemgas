@@ -31,7 +31,7 @@ function StatsCard(props: StatsCardProps) {
       py={"5"}
       shadow="dark-lg"
       rounded={"lg"}
-      bgColor={"brand.green800"}
+      bgColor={"whiteAlpha.300"}
       color={"whiteAlpha.900"}
     >
       <Flex justifyContent={"space-between"}>

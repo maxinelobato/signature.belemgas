@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 export default function ButtonCallNow(props: ButtonProps) {
   return (
     <Stack
-      py={10}
+      py={5}
       alignContent="center"
       alignItems="center"
       justify="left"
@@ -33,7 +33,7 @@ export default function ButtonCallNow(props: ButtonProps) {
           rounded="lg"
           bgColor="whiteAlpha.900"
           color="blackAlpha.800"
-          boxShadow="dark-lg"
+          boxShadow="lg"
           _hover={{
             bg: "brand.orange400",
             textColor: "beige",
