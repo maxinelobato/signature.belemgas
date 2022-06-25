@@ -1,7 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import { extendTheme } from "@chakra-ui/react";
-import { ButtonFramer } from "./components/ButtonCTA/ButtonFramer";
+import ButtonFramer from "./components/ButtonCTA/ButtonFramer";
 
 const theme = extendTheme({
   config: {
