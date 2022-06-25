@@ -12,7 +12,7 @@ const animationKeyframes = keyframes`
 
 const animation = `${animationKeyframes} 2s ease-in-out infinite`;
 
-export function ButtonFramer() {
+export default function ButtonFramer() {
   return (
     <Stack
       position="fixed"
