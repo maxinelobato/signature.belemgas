@@ -4,16 +4,13 @@ import "@fontsource/krona-one";
 
 export default function SectionOne() {
   return (
-    <Stack minH={"50vh"} direction={{ base: "column", md: "row" }}>
-      <Flex p={16} flex={1} align={"center"} justify={"center"}>
+    <Stack minH={"110vh"} direction={{ base: "column", md: "row" }}>
+      <Flex p={8} flex={1} align={"center"} justifyContent={"center"}>
         <Box
-          style={{
-            borderRadius: "0 5% 80% 0",
-          }}
           bgGradient="linear(to-r, transparent, brand.green800)"
           rounded="lg"
-          p={10}
-          display={"flex"}
+          py={5}
+          px={10}
         >
           <Stack spacing={0} w={"full"} maxW={"lg"}>
             <Heading

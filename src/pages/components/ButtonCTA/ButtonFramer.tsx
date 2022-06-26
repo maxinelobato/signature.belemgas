@@ -34,7 +34,7 @@ export default function ButtonFramer() {
         bgColor="whatsapp.500"
         _hover={{
           bg: "whatsapp.400",
-          textColor: "beige",
+          textColor: "whiteAlpha.900",
         }}
         boxShadow={
           "0px 1px 25px -5px rgb(72 186 119 / 100%), 0 10px 10px -5px rgb(72 186 119 / 43%)"

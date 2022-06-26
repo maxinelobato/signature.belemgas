@@ -1,7 +1,7 @@
 import { Button } from "@chakra-ui/react";
-import { BsWhatsapp } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
-export default function ButtonWhatsapp() {
+export default function ButtonInstagram() {
   return (
     <Button
       w={"full"}
@@ -15,7 +15,7 @@ export default function ButtonWhatsapp() {
         "0px 1px 25px -5px rgb(72 186 119 / 100%), 0 10px 10px -5px rgb(72 186 119 / 43%)"
       }
     >
-      <BsWhatsapp />
+      <BsInstagram />
     </Button>
   );
 }

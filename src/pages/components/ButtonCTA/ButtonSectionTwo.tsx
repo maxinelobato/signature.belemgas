@@ -12,6 +12,7 @@ export default function ButtonSectionTwo() {
       <Button
         as={motion.div}
         whileHover={{ scale: 1.1 }}
+        variant="solid"
         transition="0.1s linear"
         size="lg"
         height="60px"
@@ -21,8 +22,10 @@ export default function ButtonSectionTwo() {
         color="blackAlpha.800"
         boxShadow="lg"
         _hover={{
-          bg: "brand.orange400",
-          textColor: "beige",
+          color: "whiteAlpha.900",
+          bg: "whiteAlpha.500",
+          border: "2px solid",
+          borderColor: "whiteAlpha.900",
         }}
       >
         <Center>
