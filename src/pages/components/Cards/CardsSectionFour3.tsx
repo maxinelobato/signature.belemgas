@@ -11,8 +11,8 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
-import { FaHandsHelping } from "react-icons/fa";
 import "@fontsource/krona-one";
+import { RiCustomerServiceFill } from "react-icons/ri";
 
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
@@ -55,7 +55,7 @@ function PriceWrapper({ children }: { children: ReactNode }) {
       }}
     >
       <Box
-        maxW={"40rem"}
+        maxW={"60rem"}
         w={"full"}
         alignSelf={{ base: "center", lg: "flex-start" }}
       >
@@ -65,7 +65,7 @@ function PriceWrapper({ children }: { children: ReactNode }) {
   );
 }
 
-export default function CardsSectionThree1() {
+export default function CardsSectionFour3() {
   return (
     <Stack
       direction={{ base: "column", md: "row" }}
@@ -76,7 +76,12 @@ export default function CardsSectionThree1() {
       <PriceWrapper>
         <Box py={4} px={12}>
           <HStack justifyContent={"center"}>
-            <Icon as={FaHandsHelping} w={20} h={20} color="whiteAlpha.800" />
+            <Icon
+              as={RiCustomerServiceFill}
+              w={20}
+              h={20}
+              color="whiteAlpha.800"
+            />
           </HStack>
           <HStack justifyContent="center">
             <Text
@@ -86,7 +91,7 @@ export default function CardsSectionThree1() {
               textTransform={"uppercase"}
               color={"whiteAlpha.800"}
             >
-              Seja nosso cliente
+              canais de atendimento
             </Text>
           </HStack>
         </Box>
@@ -95,14 +100,19 @@ export default function CardsSectionThree1() {
             spacing={3}
             textAlign="start"
             px={6}
-            fontWeight="500"
+            fontWeight="600"
             color="green.300"
-            fontFamily={"Krona One"}
+            fontFamily={"Open Sans"}
           >
-            <ListItem textAlign={"center"} color={"whiteAlpha.800"}>
-              Temos uma equipe para lhe atender e a nossa entrega é rápida.{" "}
-              <br />
-              <br />
+            <ListItem
+              textAlign={"center"}
+              color={"whiteAlpha.800"}
+              marginBlockEnd={2}
+            >
+              (91) 3257-0320 <br />
+              (91) 3257-0320 <br />
+              (91) 98725-0217 <br />
+              (91) 98145-0356
             </ListItem>
           </List>
         </VStack>

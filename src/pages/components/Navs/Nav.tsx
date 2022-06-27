@@ -1,5 +1,4 @@
 import { Box, Flex, Stack } from "@chakra-ui/react";
-import "@fontsource/fredoka-one";
 import ButtonFacebook from "../ButtonCTA/ButtonFacebook";
 import ButtonInstagram from "../ButtonCTA/ButtonInstagram";
 import ButtonWhatsapp from "../ButtonCTA/ButtonWhatsapp";

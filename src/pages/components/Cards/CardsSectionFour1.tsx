@@ -11,8 +11,9 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
-import { IoIosTime } from "react-icons/io";
+import { FaHandsHelping } from "react-icons/fa";
 import "@fontsource/krona-one";
+import "@fontsource/open-sans";
 
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
@@ -65,7 +66,7 @@ function PriceWrapper({ children }: { children: ReactNode }) {
   );
 }
 
-export default function CardsSectionThree2() {
+export default function CardsSectionFour1() {
   return (
     <Stack
       direction={{ base: "column", md: "row" }}
@@ -76,7 +77,7 @@ export default function CardsSectionThree2() {
       <PriceWrapper>
         <Box py={4} px={12}>
           <HStack justifyContent={"center"}>
-            <Icon as={IoIosTime} w={20} h={20} color="whiteAlpha.800" />
+            <Icon as={FaHandsHelping} w={20} h={20} color="whiteAlpha.800" />
           </HStack>
           <HStack justifyContent="center">
             <Text
@@ -86,7 +87,7 @@ export default function CardsSectionThree2() {
               textTransform={"uppercase"}
               color={"whiteAlpha.800"}
             >
-              horário de atendimento
+              Seja nosso cliente
             </Text>
           </HStack>
         </Box>
@@ -95,15 +96,16 @@ export default function CardsSectionThree2() {
             spacing={3}
             textAlign="start"
             px={6}
-            fontWeight="500"
+            fontWeight="600"
             color="green.300"
-            fontFamily={"Krona One"}
+            fontFamily={"Open Sans"}
           >
-            <ListItem textAlign={"center"} color={"whiteAlpha.800"}>
-              Seg à Sex - 8h até 18h <br />
-              Sábado - 9h até 17h <br />
-              Domingo - 9h até 14h <br />
-              <br />
+            <ListItem
+              textAlign={"center"}
+              color={"whiteAlpha.800"}
+              marginBlockEnd={14}
+            >
+              Temos uma equipe para lhe atender e a nossa entrega é rápida.{" "}
             </ListItem>
           </List>
         </VStack>

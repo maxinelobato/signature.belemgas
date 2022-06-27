@@ -6,7 +6,7 @@ export default function ButtonSectionTwo() {
     <Stack
       spacing={4}
       py={5}
-      justify="right"
+      justify="left"
       direction={{ base: "column", md: "row" }}
     >
       <Link style={{ textDecoration: "none" }} href="" isExternal>

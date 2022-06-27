@@ -758,20 +758,15 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/alfa-slab-one@^4.5.7":
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/alfa-slab-one/-/alfa-slab-one-4.5.7.tgz#81ac9d351c4320b5bb6a210acb99da17e9210c8d"
-  integrity sha512-OsBIlM1mWqy8kd+Hbv8tSMw+PTjvbDs+hE2YCvUY9n7OJlRjyplSAFv0Kd4GSnxG7/LDp147oD+QEw8byn43HQ==
-
-"@fontsource/fredoka-one@^4.5.7":
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/fredoka-one/-/fredoka-one-4.5.7.tgz#c1adffba86e57dbc4bb6dc59682a9944f2c12f52"
-  integrity sha512-QnM1foN+zbnQHONNQnddmPwOuO4gjTlEQI0AECzv0i+kjxw5tBgOC8bQrJcP5amFc8YTvvHVHZtaJ1DCEvTmaA==
-
 "@fontsource/krona-one@^4.5.9":
   version "4.5.9"
   resolved "https://registry.yarnpkg.com/@fontsource/krona-one/-/krona-one-4.5.9.tgz#ac998f7377095a43591c0d3b3fd70d1a697855be"
   integrity sha512-zOBTgWm0EAHiDox41mDoG8htjnyr36v3kC2jlB2B/ZgIKwPIsmj9YtI5oje/5nxjLNTS/ojNbUAjnimKDdULQA==
+
+"@fontsource/open-sans@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.10.tgz#c4269c54d6f5f8661322facb5946d8188fadc7f2"
+  integrity sha512-MrtTDfWb1Tu9YxVh2KaKmsKBn6O3KL/lHZS0KRKK58jgqvdwuiDt4QW4udmW4FQf0XOWgnZ+4vKUF80F3SqBAA==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"

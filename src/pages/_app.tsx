@@ -2,6 +2,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import { extendTheme } from "@chakra-ui/react";
 import ButtonFramer from "./components/ButtonCTA/ButtonFramer";
+import "@fontsource/krona-one";
+import "@fontsource/open-sans";
 
 const theme = extendTheme({
   config: {
@@ -14,6 +16,10 @@ const theme = extendTheme({
       green400: "#48BB78",
       green800: "#22543D",
     },
+  },
+  fonts: {
+    heading: `'Krona One', sans-serif`,
+    text: `'Open Sans', sans-serif`,
   },
 });
 

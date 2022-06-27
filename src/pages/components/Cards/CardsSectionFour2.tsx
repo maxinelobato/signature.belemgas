@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import { ReactNode } from "react";
 import { IoIosTime } from "react-icons/io";
 import "@fontsource/krona-one";
-import { RiCustomerServiceFill } from "react-icons/ri";
+import "@fontsource/open-sans";
 
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
@@ -56,7 +56,7 @@ function PriceWrapper({ children }: { children: ReactNode }) {
       }}
     >
       <Box
-        maxW={"60rem"}
+        maxW={"40rem"}
         w={"full"}
         alignSelf={{ base: "center", lg: "flex-start" }}
       >
@@ -66,7 +66,7 @@ function PriceWrapper({ children }: { children: ReactNode }) {
   );
 }
 
-export default function CardsSectionThree3() {
+export default function CardsSectionFour2() {
   return (
     <Stack
       direction={{ base: "column", md: "row" }}
@@ -77,12 +77,7 @@ export default function CardsSectionThree3() {
       <PriceWrapper>
         <Box py={4} px={12}>
           <HStack justifyContent={"center"}>
-            <Icon
-              as={RiCustomerServiceFill}
-              w={20}
-              h={20}
-              color="whiteAlpha.800"
-            />
+            <Icon as={IoIosTime} w={20} h={20} color="whiteAlpha.800" />
           </HStack>
           <HStack justifyContent="center">
             <Text
@@ -92,7 +87,7 @@ export default function CardsSectionThree3() {
               textTransform={"uppercase"}
               color={"whiteAlpha.800"}
             >
-              canais de atendimento
+              horário de atendimento
             </Text>
           </HStack>
         </Box>
@@ -101,15 +96,18 @@ export default function CardsSectionThree3() {
             spacing={3}
             textAlign="start"
             px={6}
-            fontWeight="500"
+            fontWeight="600"
             color="green.300"
-            fontFamily={"Krona One"}
+            fontFamily={"Open Sans"}
           >
-            <ListItem textAlign={"center"} color={"whiteAlpha.800"}>
-              (91) 3257-0320 <br />
-              (91) 3257-0320 <br />
-              (91) 98725-0217 <br />
-              (91) 98145-0356
+            <ListItem
+              textAlign={"center"}
+              color={"whiteAlpha.800"}
+              marginBlockEnd={8}
+            >
+              Seg à Sex - 8h até 18h <br />
+              Sábado - 9h até 17h <br />
+              Domingo - 9h até 14h
             </ListItem>
           </List>
         </VStack>

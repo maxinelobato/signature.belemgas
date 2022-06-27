@@ -1,6 +1,5 @@
 import { Stack, Flex, Text, Heading, Box } from "@chakra-ui/react";
 import ButtonCallNow from "../ButtonCTA/ButtonCallNow";
-import "@fontsource/krona-one";
 
 export default function SectionOne() {
   return (
@@ -14,7 +13,6 @@ export default function SectionOne() {
               py={18}
             >
               <Heading
-                fontFamily={"Krona One"}
                 textAlign={"left"}
                 color="whiteAlpha.800"
                 fontSize="5xl"
