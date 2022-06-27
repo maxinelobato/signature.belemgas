@@ -8,49 +8,33 @@ export default function SectionTwo() {
       <Stack minH={"50vh"} direction={{ base: "column", md: "row" }}>
         <Flex flex={1}>
           <Image
-            style={{
-              borderRadius: "0 20% 50% 0",
-            }}
+            w={900}
+            h={600}
             alt={"Delivery Belém Gás"}
-            objectFit={"cover"}
-            src={"/img/bgfamiliareunida.svg"}
+            src={"/img/bgentregador.svg"}
           />
         </Flex>
-        <Flex p={16} flex={1} align={"center"} justify={"center"}>
-          <Box rounded="lg" p={10}>
-            <Stack spacing={6} w={"full"} maxW={"lg"}>
-              <Heading
-                fontFamily={"Krona One"}
-                textAlign={"right"}
-                mb={2}
-                color="whiteAlpha.800"
-                fontSize="4xl"
-              >
-                Uma empresa familiar, com o único objetivo de entregar{" "}
-                <Text
-                  as="span"
-                  color="orange.400"
-                  position={"relative"}
-                  _after={{
-                    content: "''",
-                    width: "full",
-                    height: "95%",
-                    position: "absolute",
-                    bottom: 1,
-                    rounded: 4,
-                    left: 2,
-                    bg: "blackAlpha.900",
-                    zIndex: -1,
-                  }}
-                >
-                  {" "}
-                  as famílias de Belém do Pará o melhor em serviço e atendimento
-                  rápido.
-                </Text>
-              </Heading>
-              <ButtonSectionTwo />
-            </Stack>
-          </Box>
+        <Flex p={24} align={"center"} justify={"center"}>
+          <Stack spacing={6} w={"full"} maxW={"lg"}>
+            <Heading
+              fontFamily={"Krona One"}
+              textAlign={"right"}
+              fontSize="3xl"
+              color="whiteAlpha.800"
+            >
+              Chame a Belém Gás no WhatsApp <br />
+              <Text as="span" color="orange.400">
+                {" "}
+                Salve o nosso número{" "}
+                <Text as="span" color="whiteAlpha.800">
+                  (91) 98725-0217
+                </Text>{" "}
+                nos seus contatos e sempre que precisar de Gás é só nos chamar
+                que irá chegar rapidinho!
+              </Text>
+            </Heading>
+            <ButtonSectionTwo />
+          </Stack>
         </Flex>
       </Stack>
     </>

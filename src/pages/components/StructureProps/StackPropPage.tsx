@@ -7,7 +7,7 @@ export default function StackPropPage(props: StackProps) {
       bgSize="cover"
       bgPosition="center center"
       bgRepeat="no-repeat"
-      minH="100vh"
+      minH="50vh"
       {...props}
     />
   );

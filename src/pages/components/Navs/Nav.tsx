@@ -13,9 +13,9 @@ export default function Nav() {
       <Box
         boxShadow="lg"
         bg="whiteAlpha.700"
-        border="1px solid"
-        borderColor="whiteAlpha.400"
-        px="7rem"
+        borderBottom="1px solid"
+        borderColor="whiteAlpha.900"
+        px={24}
         w={"full"}
         zIndex={999}
         position={"fixed"}
@@ -35,7 +35,7 @@ export default function Nav() {
           height: "full",
           maxW: "full",
           width: "full",
-          filter: "blur(80px)",
+          filter: "blur(10rem)",
           transform: "scale(0.98)",
           backgroundRepeat: "repeat",
           backgroundSize: "cover",
@@ -46,7 +46,7 @@ export default function Nav() {
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Flex alignItems={"center"}>
-            <Stack direction={"row"} spacing={7}>
+            <Stack direction={"row"} spacing={8}>
               <LogoBelemGas />
             </Stack>
           </Flex>

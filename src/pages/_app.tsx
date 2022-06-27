@@ -13,7 +13,6 @@ const theme = extendTheme({
       orange400: "#ED8936",
       green400: "#48BB78",
       green800: "#22543D",
-      whiteAlpha900: "255 255 255 0.92",
     },
   },
 });

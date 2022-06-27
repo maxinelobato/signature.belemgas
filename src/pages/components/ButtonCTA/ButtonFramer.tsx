@@ -1,4 +1,4 @@
-import { IconButton, keyframes, Stack } from "@chakra-ui/react";
+import { IconButton, keyframes, Link, Stack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { BsWhatsapp } from "react-icons/bs";
 
@@ -18,28 +18,30 @@ export default function ButtonFramer() {
       position="fixed"
       zIndex={999}
       bottom="30px"
-      left="30px"
+      right="30px"
       justifyContent="center"
       alignItems="center"
     >
-      <IconButton
-        as={motion.div}
-        animation={animation}
-        display="flex"
-        transition="0.1s linear"
-        bgGradient="linear(to-l, whatsapp.500, whatsapp.400)"
-        aria-label="WhatsApp"
-        size="sm"
-        icon={<BsWhatsapp size={20} />}
-        bgColor="whatsapp.500"
-        _hover={{
-          bg: "whatsapp.400",
-          textColor: "whiteAlpha.900",
-        }}
-        boxShadow={
-          "0px 1px 25px -5px rgb(72 186 119 / 100%), 0 10px 10px -5px rgb(72 186 119 / 43%)"
-        }
-      />
+      <Link style={{ textDecoration: "none" }} href="" isExternal>
+        <IconButton
+          as={motion.div}
+          animation={animation}
+          display="flex"
+          transition="0.1s linear"
+          bgGradient="linear(to-l, whatsapp.500, whatsapp.400)"
+          aria-label="WhatsApp"
+          size="sm"
+          icon={<BsWhatsapp size={20} />}
+          bgColor="whatsapp.500"
+          _hover={{
+            bg: "whatsapp.400",
+            textColor: "whiteAlpha.900",
+          }}
+          boxShadow={
+            "0px 1px 25px -5px rgb(72 186 119 / 100%), 0 10px 10px -5px rgb(72 186 119 / 43%)"
+          }
+        />
+      </Link>
     </Stack>
   );
 }

@@ -11,17 +11,12 @@ import { motion } from "framer-motion";
 export default function ButtonCallNow(props: ButtonProps) {
   return (
     <Stack
-      py={10}
-      alignContent="center"
-      alignItems="center"
+      spacing={4}
+      py={5}
       justify="left"
       direction={{ base: "column", md: "row" }}
     >
-      <Link
-        style={{ textDecoration: "none" }}
-        href="https://wa.me/message/N7ODJHBPZALLJ1"
-        isExternal
-      >
+      <Link style={{ textDecoration: "none" }} href="" isExternal>
         <Button
           {...props}
           as={motion.div}
@@ -43,7 +38,7 @@ export default function ButtonCallNow(props: ButtonProps) {
           }}
         >
           <Center>
-            <Text textTransform={"uppercase"}>peça seu gás agora</Text>
+            <Text textTransform={"uppercase"}>peça seu gás!</Text>
           </Center>
         </Button>
       </Link>

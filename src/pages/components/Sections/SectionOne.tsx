@@ -4,39 +4,30 @@ import "@fontsource/krona-one";
 
 export default function SectionOne() {
   return (
-    <Stack minH={"110vh"} direction={{ base: "column", md: "row" }}>
-      <Flex p={8} flex={1} align={"center"} justifyContent={"center"}>
-        <Box
-          bgGradient="linear(to-r, transparent, brand.green800)"
-          rounded="lg"
-          py={5}
-          px={10}
-        >
-          <Stack spacing={0} w={"full"} maxW={"lg"}>
-            <Heading
-              textAlign={"left"}
-              color="whiteAlpha.800"
-              fontFamily="Krona One"
-              textTransform={"uppercase"}
-              fontWeight={600}
-              fontSize={{ base: "3xl", sm: "4xl", md: "5xl" }}
-              lineHeight={"110%"}
+    <Stack minH={"90vh"} direction={{ base: "column", md: "row" }}>
+      <Flex p={16} align={"center"} justifyContent={"center"}>
+        <Box rounded="lg" p={8}>
+          <Stack spacing={6} w={"full"} maxW={"lg"}>
+            <Box
+              bgGradient="linear(to-r, transparent, brand.green800)"
+              rounded={6}
+              py={18}
             >
-              Acabou o gás bem na hora da fome? <br />
-              <Text
+              <Heading
                 fontFamily={"Krona One"}
-                as={"span"}
+                textAlign={"left"}
+                color="whiteAlpha.800"
+                fontSize="5xl"
                 textTransform={"uppercase"}
-                lineHeight={"90%"}
-                fontSize={"2xl"}
-                color={"orange.200"}
               >
-                Não fique em pânico! O seu gás está na Belém Gás.
-              </Text>
-            </Heading>
-            <Stack direction={{ base: "column", md: "row" }} spacing={4}>
+                acabou o gás bem na hora da fome? <br />
+                <Text as="span" color="orange.200" fontSize={"2xl"}>
+                  {" "}
+                  não fique em pânico! O seu gás está na Belém Gás.
+                </Text>
+              </Heading>
               <ButtonCallNow />
-            </Stack>
+            </Box>
           </Stack>
         </Box>
       </Flex>

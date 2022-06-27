@@ -7,6 +7,7 @@ export default class Document extends NextDocument {
         <Head />
         <body>
           {/* 👇 Here's the script */}
+          <title>Belém Gás - Liquigás</title>
           <Main />
           <NextScript />
         </body>
