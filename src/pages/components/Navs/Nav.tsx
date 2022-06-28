@@ -1,4 +1,13 @@
-import { Box, Flex, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  CloseButton,
+  Flex,
+  HStack,
+  IconButton,
+  VStack,
+  useDisclosure,
+} from "@chakra-ui/react";
+import { AiOutlineMenu } from "react-icons/ai";
 import ButtonFacebook from "../ButtonCTA/ButtonFacebook";
 import ButtonInstagram from "../ButtonCTA/ButtonInstagram";
 import ButtonWhatsapp from "../ButtonCTA/ButtonWhatsapp";
@@ -7,6 +16,7 @@ import LogoBelemGas from "../IdVisual/LogoBelemGas";
 const backgrounds = [`url("img/backdrop.svg")`];
 
 export default function Nav() {
+  const mobileNav = useDisclosure();
   return (
     <>
       <Box
@@ -44,18 +54,57 @@ export default function Nav() {
         }}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <Flex alignItems={"center"}>
-            <Stack direction={"row"} spacing={8}>
-              <LogoBelemGas />
-            </Stack>
+          <Flex display="flex" alignItems="center">
+            <LogoBelemGas />
           </Flex>
-          <Flex alignItems={"center"}>
-            <Stack direction={"row"} spacing={2}>
+          <HStack display="flex" alignItems="center" spacing={1}>
+            <HStack
+              spacing={1}
+              mr={1}
+              color="brand.500"
+              display={{ base: "none", md: "inline-flex" }}
+            >
               <ButtonWhatsapp />
               <ButtonInstagram />
               <ButtonFacebook />
-            </Stack>
-          </Flex>
+            </HStack>
+            <Box display={{ base: "inline-flex", md: "none" }}>
+              <IconButton
+                display={{ base: "flex", md: "none" }}
+                aria-label="Open Menu"
+                fontSize="20px"
+                color="gray.800"
+                _dark={{ color: "inherit" }}
+                variant="ghost"
+                icon={<AiOutlineMenu />}
+                onClick={mobileNav.onOpen}
+              />
+
+              <VStack
+                pos="absolute"
+                top={0}
+                left={0}
+                right={0}
+                display={mobileNav.isOpen ? "flex" : "none"}
+                flexDirection="column"
+                p={2}
+                pb={4}
+                m={2}
+                bg="whiteAlpha.700"
+                spacing={3}
+                rounded="sm"
+                shadow="sm"
+              >
+                <CloseButton
+                  aria-label="Close menu"
+                  onClick={mobileNav.onClose}
+                />
+                <ButtonWhatsapp />
+                <ButtonInstagram />
+                <ButtonFacebook />
+              </VStack>
+            </Box>
+          </HStack>
         </Flex>
       </Box>
     </>

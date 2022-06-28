@@ -3,12 +3,7 @@ import { motion } from "framer-motion";
 
 export default function ButtonSectionTwo() {
   return (
-    <Stack
-      spacing={4}
-      py={5}
-      justify="left"
-      direction={{ base: "column", md: "row" }}
-    >
+    <Stack py={5} justify="left" direction={{ base: "column", md: "row" }}>
       <Link style={{ textDecoration: "none" }} href="" isExternal>
         <Button
           as={motion.div}
@@ -30,7 +25,7 @@ export default function ButtonSectionTwo() {
           }}
         >
           <Center>
-            <Text textTransform={"uppercase"}>fale conosco </Text>
+            <Text textTransform={"uppercase"}>fale conosco</Text>
           </Center>
         </Button>
       </Link>

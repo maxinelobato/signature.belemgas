@@ -9,11 +9,12 @@ export default function SectionTwo() {
           <Image
             w={900}
             h={600}
+            objectFit={"cover"}
             alt={"Delivery Belém Gás"}
             src={"/img/bgentregador.svg"}
           />
         </Flex>
-        <Flex p={24} align={"center"} justify={"center"}>
+        <Flex flex={1} align={"center"} justify={"center"}>
           <Stack spacing={6} w={"full"} maxW={"lg"}>
             <Heading textAlign={"left"} fontSize="3xl" color="whiteAlpha.800">
               Chame a Belém Gás no WhatsApp <br />
