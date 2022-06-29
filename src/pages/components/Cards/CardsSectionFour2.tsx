@@ -75,7 +75,7 @@ export default function CardsSectionFour2() {
       spacing={{ base: 4, lg: 10 }}
     >
       <PriceWrapper>
-        <Box py={4} px={12}>
+        <Box py={4} px={12} overflow="hidden">
           <HStack justifyContent={"center"}>
             <Icon as={IoIosTime} w={20} h={20} color="whiteAlpha.800" />
           </HStack>
@@ -87,7 +87,7 @@ export default function CardsSectionFour2() {
               textTransform={"uppercase"}
               color={"whiteAlpha.800"}
             >
-              horário de atendimento
+              Horários
             </Text>
           </HStack>
         </Box>
@@ -100,13 +100,13 @@ export default function CardsSectionFour2() {
             color="green.300"
             fontFamily={"Open Sans"}
           >
-            <ListItem
-              textAlign={"center"}
-              color={"whiteAlpha.800"}
-              marginBlockEnd={8}
-            >
-              Seg à Sex - 8h até 18h <br />
-              Sábado - 9h até 17h <br />
+            <ListItem textAlign={"center"} color={"whiteAlpha.800"}>
+              Seg à Sex - 8h até 18h
+            </ListItem>
+            <ListItem textAlign={"center"} color={"whiteAlpha.800"}>
+              Sábado - 9h até 17h
+            </ListItem>
+            <ListItem textAlign={"center"} color={"whiteAlpha.800"}>
               Domingo - 9h até 14h
             </ListItem>
           </List>

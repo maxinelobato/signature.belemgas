@@ -73,9 +73,7 @@ export default function Nav() {
                 display={{ base: "flex", md: "none" }}
                 aria-label="Open Menu"
                 fontSize="20px"
-                color="gray.800"
-                _dark={{ color: "inherit" }}
-                variant="ghost"
+                colorScheme="green"
                 icon={<AiOutlineMenu />}
                 onClick={mobileNav.onOpen}
               />
@@ -90,7 +88,8 @@ export default function Nav() {
                 p={2}
                 pb={4}
                 m={2}
-                bg="whiteAlpha.700"
+                color={"blackAlpha.900"}
+                bg="whiteAlpha.800"
                 spacing={3}
                 rounded="sm"
                 shadow="sm"

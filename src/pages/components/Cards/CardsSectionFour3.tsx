@@ -74,7 +74,7 @@ export default function CardsSectionFour3() {
       spacing={{ base: 4, lg: 10 }}
     >
       <PriceWrapper>
-        <Box py={4} px={12}>
+        <Box py={4} px={12} overflow="hidden">
           <HStack justifyContent={"center"}>
             <Icon
               as={RiCustomerServiceFill}
@@ -91,7 +91,7 @@ export default function CardsSectionFour3() {
               textTransform={"uppercase"}
               color={"whiteAlpha.800"}
             >
-              canais de atendimento
+              Contatos
             </Text>
           </HStack>
         </Box>
@@ -104,11 +104,7 @@ export default function CardsSectionFour3() {
             color="green.300"
             fontFamily={"Open Sans"}
           >
-            <ListItem
-              textAlign={"center"}
-              color={"whiteAlpha.800"}
-              marginBlockEnd={2}
-            >
+            <ListItem textAlign={"center"} color={"whiteAlpha.800"}>
               (91) 3257-0320 <br />
               (91) 3257-0320 <br />
               (91) 98725-0217 <br />

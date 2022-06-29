@@ -9,7 +9,6 @@ export default function SectionTwo() {
           <Image
             w={900}
             h={600}
-            objectFit={"cover"}
             alt={"Delivery Belém Gás"}
             src={"/img/bgentregador.svg"}
           />

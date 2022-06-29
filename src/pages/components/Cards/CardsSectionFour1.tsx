@@ -75,7 +75,7 @@ export default function CardsSectionFour1() {
       spacing={{ base: 4, lg: 10 }}
     >
       <PriceWrapper>
-        <Box py={4} px={12}>
+        <Box py={4} px={12} overflow="hidden">
           <HStack justifyContent={"center"}>
             <Icon as={FaHandsHelping} w={20} h={20} color="whiteAlpha.800" />
           </HStack>
@@ -100,12 +100,14 @@ export default function CardsSectionFour1() {
             color="green.300"
             fontFamily={"Open Sans"}
           >
-            <ListItem
-              textAlign={"center"}
-              color={"whiteAlpha.800"}
-              marginBlockEnd={14}
-            >
-              Temos uma equipe para lhe atender e a nossa entrega é rápida.{" "}
+            <ListItem textAlign={"center"} color={"whiteAlpha.800"}>
+              Excelente atendimento
+            </ListItem>
+            <ListItem textAlign={"center"} color={"whiteAlpha.800"}>
+              Entrega rápida
+            </ListItem>
+            <ListItem textAlign={"center"} color={"whiteAlpha.800"}>
+              Várias linhas de comunicação
             </ListItem>
           </List>
         </VStack>
