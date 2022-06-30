@@ -1,5 +1,5 @@
-import { Box, Flex, Heading, SimpleGrid, Stack } from "@chakra-ui/react";
 import React from "react";
+import { Box, Flex, Heading, SimpleGrid, Stack } from "@chakra-ui/react";
 import CardsSectionFour1 from "../Cards/CardsSectionFour1";
 import CardsSectionFour2 from "../Cards/CardsSectionFour2";
 import CardsSectionFour3 from "../Cards/CardsSectionFour3";
@@ -14,12 +14,15 @@ export default function SectionFour() {
             textAlign={"center"}
             fontFamily={"Krona One"}
             fontWeight={600}
-            marginBlockEnd={16}
           >
             A maior missão da Belém Gás é facilitar nossos serviços e entregas
             para você.
           </Heading>
-          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
+          <SimpleGrid
+            mt={16}
+            columns={{ base: 1, md: 3 }}
+            spacing={{ base: 5, lg: 8 }}
+          >
             <Box>
               <CardsSectionFour1 />
             </Box>

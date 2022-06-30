@@ -44,7 +44,7 @@ export default function Nav() {
           height: "full",
           maxW: "full",
           width: "full",
-          filter: "blur(10rem)",
+          filter: "blur(50rem)",
           transform: "scale(0.98)",
           backgroundRepeat: "repeat",
           backgroundSize: "cover",
