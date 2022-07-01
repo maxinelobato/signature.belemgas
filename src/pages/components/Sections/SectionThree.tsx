@@ -45,13 +45,13 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
         <Text
           fontWeight={600}
           fontFamily={"Krona One"}
-          color={"whiteAlpha.800"}
+          color={"brand.green800"}
         >
           {title}
         </Text>
       </VStack>
       <Text
-        color={"whiteAlpha.800"}
+        color={"brand.green800"}
         fontFamily={"Open Sans"}
         textAlign={"center"}
       >
@@ -65,7 +65,7 @@ export default function SectionThree() {
   return (
     <Box p={8} maxW="full" mx={"auto"} px="6rem">
       <Heading
-        color={"whiteAlpha.800"}
+        color={"brand.green800"}
         textAlign={"center"}
         fontFamily={"Krona One"}
         fontWeight={600}

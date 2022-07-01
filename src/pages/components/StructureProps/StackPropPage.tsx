@@ -5,9 +5,8 @@ export default function StackPropPage(props: StackProps) {
     <Stack
       bgImage="img/bgbelemgas.svg"
       bgSize="cover"
-      bgPosition="center center"
+      bgPosition="center"
       bgRepeat="no-repeat"
-      minH="50vh"
       {...props}
     />
   );

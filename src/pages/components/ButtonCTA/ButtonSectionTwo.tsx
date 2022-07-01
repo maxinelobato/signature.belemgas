@@ -3,7 +3,12 @@ import { motion } from "framer-motion";
 
 export default function ButtonSectionTwo() {
   return (
-    <Stack py={5} justify="left" direction={{ base: "column", md: "row" }}>
+    <Stack
+      py={5}
+      justify="left"
+      alignItems={"center"}
+      direction={{ base: "column", md: "row" }}
+    >
       <Link style={{ textDecoration: "none" }} href="" isExternal>
         <Button
           as={motion.div}

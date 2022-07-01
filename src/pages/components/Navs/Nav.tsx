@@ -13,98 +13,78 @@ import ButtonInstagram from "../ButtonCTA/ButtonInstagram";
 import ButtonWhatsapp from "../ButtonCTA/ButtonWhatsapp";
 import LogoBelemGas from "../IdVisual/LogoBelemGas";
 
-const backgrounds = [`url("img/backdrop.svg")`];
+// const innerBoxStyles = {
+//   textShadow: "0 0 20px white",
+// };
 
 export default function Nav() {
   const mobileNav = useDisclosure();
+  const Zoom = require("react-reveal/Zoom");
+
   return (
     <>
       <Box
         boxShadow="lg"
-        bg="whiteAlpha.700"
+        bg="whiteAlpha.500"
         borderBottom="1px solid"
-        borderColor="whiteAlpha.900"
+        borderColor="whiteAlpha.600"
         px={24}
         w={"full"}
         zIndex={999}
         position={"fixed"}
-        _after={{
-          content: '""',
-          position: "absolute",
-          height: "21px",
-          width: "29px",
-          left: "35px",
-          top: "-10px",
-          backgroundSize: "cover",
-        }}
-        _before={{
-          content: '""',
-          position: "absolute",
-          zIndex: "-1",
-          height: "full",
-          maxW: "full",
-          width: "full",
-          filter: "blur(50rem)",
-          transform: "scale(0.98)",
-          backgroundRepeat: "repeat",
-          backgroundSize: "cover",
-          top: 0,
-          left: 0,
-          backgroundImage: backgrounds,
-        }}
       >
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <Flex display="flex" alignItems="center">
-            <LogoBelemGas />
-          </Flex>
-          <HStack display="flex" alignItems="center" spacing={1}>
-            <HStack
-              spacing={1}
-              mr={1}
-              color="brand.500"
-              display={{ base: "none", md: "inline-flex" }}
-            >
-              <ButtonWhatsapp />
-              <ButtonInstagram />
-              <ButtonFacebook />
-            </HStack>
-            <Box display={{ base: "inline-flex", md: "none" }}>
-              <IconButton
-                display={{ base: "flex", md: "none" }}
-                aria-label="Open Menu"
-                fontSize="20px"
-                colorScheme="green"
-                icon={<AiOutlineMenu />}
-                onClick={mobileNav.onOpen}
-              />
-
-              <VStack
-                pos="absolute"
-                top={0}
-                left={0}
-                right={0}
-                display={mobileNav.isOpen ? "flex" : "none"}
-                flexDirection="column"
-                p={2}
-                pb={4}
-                m={2}
-                color={"blackAlpha.900"}
-                bg="whiteAlpha.800"
-                spacing={3}
-                rounded="sm"
-                shadow="sm"
+        <Box backdropFilter="auto" backdropBlur="1rem">
+          <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+            <Flex display="flex" alignItems="center">
+              <Zoom duration={600}>
+                <LogoBelemGas />
+              </Zoom>
+            </Flex>
+            <HStack display="flex" alignItems="center" spacing={1}>
+              <HStack
+                spacing={1}
+                mr={1}
+                color="brand.500"
+                display={{ base: "none", md: "inline-flex" }}
               >
-                <CloseButton
-                  aria-label="Close menu"
-                  onClick={mobileNav.onClose}
-                />
                 <ButtonWhatsapp />
-                <ButtonInstagram />
-                <ButtonFacebook />
-              </VStack>
-            </Box>
-          </HStack>
-        </Flex>
+              </HStack>
+              <Box display={{ base: "inline-flex", md: "none" }}>
+                <IconButton
+                  display={{ base: "flex", md: "none" }}
+                  aria-label="Open Menu"
+                  fontSize="20px"
+                  colorScheme="green"
+                  icon={<AiOutlineMenu />}
+                  onClick={mobileNav.onOpen}
+                />
+
+                <VStack
+                  pos="absolute"
+                  top={0}
+                  left={0}
+                  right={0}
+                  display={mobileNav.isOpen ? "flex" : "none"}
+                  flexDirection="column"
+                  p={2}
+                  pb={4}
+                  m={2}
+                  color={"blackAlpha.900"}
+                  bg="whiteAlpha.800"
+                  spacing={3}
+                  rounded="sm"
+                  shadow="sm"
+                >
+                  <CloseButton
+                    aria-label="Close menu"
+                    onClick={mobileNav.onClose}
+                  />
+                  <ButtonWhatsapp />
+                </VStack>
+              </Box>
+            </HStack>
+          </Flex>
+        </Box>
       </Box>
     </>
   );
