@@ -4,7 +4,7 @@ import "@fontsource/open-sans";
 
 export default function SectionThree() {
   return (
-    <Box p={16} maxW="85rem" mx={"auto"} px="2rem">
+    <Box p={16} maxW="85rem" mx={"auto"}>
       <Heading
         color={"brand.green800"}
         textAlign={"center"}
