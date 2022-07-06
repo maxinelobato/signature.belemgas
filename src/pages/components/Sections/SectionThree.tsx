@@ -1,64 +1,57 @@
-import { Image, Box, SimpleGrid, Heading } from "@chakra-ui/react";
+import { Image, Box, SimpleGrid, Heading, Text } from "@chakra-ui/react";
 import "@fontsource/krona-one";
 import "@fontsource/open-sans";
 
 export default function SectionThree() {
   return (
-    <Box p={8} maxW="full" mx={"auto"} px="6rem">
+    <Box p={16} maxW="85rem" mx={"auto"} px="2rem">
       <Heading
         color={"brand.green800"}
         textAlign={"center"}
         fontFamily={"Krona One"}
         fontWeight={600}
-        marginBottom={16}
+        marginBottom={10}
       >
-        Formas de Pagamento
+        Formas de Pagamento <br />
+        <Text
+          as="span"
+          fontFamily={"Open Sans"}
+          fontWeight={100}
+          color="brand.green800"
+        >
+          Cartão de Crédito / Débito / Pix
+        </Text>
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 4 }} spacing={2}>
+      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={{ base: 5, lg: 8 }}>
         <Box maxW={"auto"} w={"full"} rounded={"md"} overflow={"hidden"}>
           <Image
-            w={"full"}
-            objectFit="cover"
-            src="/img/americanexpress.svg"
-            alt="..."
-          />
-        </Box>
-        <Box
-          bgColor={"whiteAlpha.900"}
-          maxW={"auto"}
-          w={"full"}
-          rounded={"md"}
-          overflow={"hidden"}
-        >
-          <Image
-            mt={5}
-            w={"full"}
+            borderRadius="lg"
             objectFit="cover"
             src="/img/mastercard.svg"
             alt="..."
           />
         </Box>
-        <Box
-          bgColor={"whiteAlpha.900"}
-          maxW={"auto"}
-          w={"full"}
-          rounded={"md"}
-          overflow={"hidden"}
-        >
-          <Image w={"full"} objectFit="cover" src="/img/visa.svg" alt="..." />
-        </Box>
-        <Box
-          bgColor={"black"}
-          maxW={"auto"}
-          w={"full"}
-          rounded={"md"}
-          overflow={"hidden"}
-        >
+        <Box maxW={"auto"} w={"full"} rounded={"md"} overflow={"hidden"}>
           <Image
-            mt={20}
-            w={"full"}
+            borderRadius="lg"
+            objectFit="cover"
+            src="/img/visa.svg"
+            alt="..."
+          />
+        </Box>
+        <Box maxW={"auto"} w={"full"} rounded={"md"} overflow={"hidden"}>
+          <Image
+            borderRadius="lg"
             objectFit="cover"
             src="/img/elo.svg"
+            alt="..."
+          />
+        </Box>
+        <Box maxW={"auto"} rounded={"md"} overflow={"hidden"}>
+          <Image
+            borderRadius="lg"
+            objectFit="cover"
+            src="/img/pix.svg"
             alt="..."
           />
         </Box>

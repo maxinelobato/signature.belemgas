@@ -8,8 +8,8 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
-import ButtonFacebook from "../ButtonCTA/ButtonFacebook";
-import ButtonInstagram from "../ButtonCTA/ButtonInstagram";
+// import ButtonFacebook from "../ButtonCTA/ButtonFacebook";
+// import ButtonInstagram from "../ButtonCTA/ButtonInstagram";
 import ButtonWhatsapp from "../ButtonCTA/ButtonWhatsapp";
 import LogoBelemGas from "../IdVisual/LogoBelemGas";
 
@@ -19,7 +19,6 @@ import LogoBelemGas from "../IdVisual/LogoBelemGas";
 
 export default function Nav() {
   const mobileNav = useDisclosure();
-  const Zoom = require("react-reveal/Zoom");
 
   return (
     <>
@@ -37,9 +36,7 @@ export default function Nav() {
           <Box backdropFilter="auto" backdropBlur="1rem">
             <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
               <Flex display="flex" alignItems="center">
-                <Zoom duration={600}>
-                  <LogoBelemGas />
-                </Zoom>
+                <LogoBelemGas />
               </Flex>
               <HStack display="flex" alignItems="center" spacing={1}>
                 <HStack

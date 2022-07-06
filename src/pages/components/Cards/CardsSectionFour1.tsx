@@ -1,12 +1,13 @@
-import { Box, Center, Heading, Text, Stack, Icon } from "@chakra-ui/react";
+import { Box, Heading, Text, Stack, Icon } from "@chakra-ui/react";
 import { FaHandsHelping } from "react-icons/fa";
 
 export default function CardsSectionFour1() {
   const Fade = require("react-reveal/Fade");
   return (
-    <Fade duration={700} cascade right>
+    <Fade duration={600} left>
       <Box
         maxW={"445px"}
+        h={"400px"}
         w={"full"}
         p={6}
         overflow={"hidden"}
@@ -17,7 +18,7 @@ export default function CardsSectionFour1() {
         border="1px solid"
         borderColor="whiteAlpha.400"
       >
-        <Box h={"210px"} mt={6} mx={-6} mb={-14} pos={"relative"}>
+        <Box h={"200px"}>
           <Icon as={FaHandsHelping} w="full" h={28} color="whiteAlpha.800" />
         </Box>
         <Stack>

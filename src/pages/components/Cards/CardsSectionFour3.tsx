@@ -4,9 +4,10 @@ import { RiCustomerServiceFill } from "react-icons/ri";
 export default function CardsSectionFour1() {
   const Fade = require("react-reveal/Fade");
   return (
-    <Fade duration={800} cascade right>
+    <Fade duration={800} left>
       <Box
         maxW={"445px"}
+        h={"400px"}
         w={"full"}
         p={6}
         overflow={"hidden"}
@@ -17,7 +18,7 @@ export default function CardsSectionFour1() {
         border="1px solid"
         borderColor="whiteAlpha.400"
       >
-        <Box h={"210px"} mt={6} mx={-6} mb={-14} pos={"relative"}>
+        <Box h={"200px"}>
           <Icon
             as={RiCustomerServiceFill}
             w="full"
@@ -42,9 +43,8 @@ export default function CardsSectionFour1() {
             color="whiteAlpha.800"
             fontFamily={"Open Sans"}
           >
-            Telefone: (91) 3257-0320 / 3257-0320 <br />
-            Celular: (91) 98725-0217 <br />
-            WhatsApp: (91) 98145-0356
+            Telefone: (91) 3257-0320 / 3257-0276 <br />
+            Celular: (91) 98725-0217 / 98145-0356 <br />
           </Text>
         </Stack>
       </Box>

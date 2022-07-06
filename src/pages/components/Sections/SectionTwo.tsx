@@ -1,7 +1,6 @@
 import { Stack, Flex, Heading, Text, Image, Box } from "@chakra-ui/react";
 import ButtonSectionTwo from "../ButtonCTA/ButtonSectionTwo";
 import "@fontsource/krona-one";
-import ButtonCallNow from "../ButtonCTA/ButtonCallNow";
 
 export default function SectionTwo() {
   const Fade = require("react-reveal/Fade");
@@ -19,7 +18,7 @@ export default function SectionTwo() {
         <Flex p={16} align={"center"} justifyContent={"center"}>
           <Box rounded="lg" p={8} maxW="40rem">
             <Stack spacing={6} w={"full"} maxW={"lg"}>
-              <Fade duration={600} right cascade>
+              <Fade duration={600} left>
                 <Heading
                   textAlign={"left"}
                   fontSize="3xl"

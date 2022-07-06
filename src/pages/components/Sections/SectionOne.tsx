@@ -1,4 +1,4 @@
-import { Stack, Flex, Text, Heading, Box, Image } from "@chakra-ui/react";
+import { Stack, Flex, Text, Heading, Box } from "@chakra-ui/react";
 import ButtonCallNow from "../ButtonCTA/ButtonCallNow";
 import "@fontsource/krona-one";
 import "@fontsource/open-sans";
@@ -15,7 +15,7 @@ export default function SectionOne() {
           bgGradient="linear(to-r, transparent, brand.green800)"
         >
           <Stack spacing={6} w={"full"} maxW={"lg"}>
-            <Fade duration={600} right>
+            <Fade duration={600} left>
               <Heading
                 fontWeight={600}
                 fontSize={{ base: "2xl", sm: "4xl", md: "4xl" }}
