@@ -1,4 +1,4 @@
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { AddIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   CloseButton,
@@ -9,6 +9,8 @@ import {
   useDisclosure,
   MenuButton,
   Menu,
+  MenuList,
+  MenuItem,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 import ButtonWhatsapp from "../ButtonCTA/ButtonWhatsapp";
@@ -56,32 +58,25 @@ export default function Nav() {
                       display={{ base: "flex", md: "none" }}
                       aria-label="Open Menu"
                       fontSize="20px"
+                      bgColor={"green.800"}
                       icon={<HamburgerIcon />}
                       onClick={mobileNav.onOpen}
                     />
-
-                    <VStack
-                      pos="absolute"
-                      top={0}
-                      left={0}
-                      right={0}
+                    <MenuList
+                      bgColor={"green.800"}
                       display={mobileNav.isOpen ? "flex" : "none"}
                       flexDirection="column"
-                      p={2}
-                      pb={4}
-                      m={2}
-                      color={"blackAlpha.900"}
-                      bg="whiteAlpha.800"
-                      spacing={3}
-                      rounded="sm"
-                      shadow="sm"
                     >
-                      <CloseButton
-                        aria-label="Close menu"
-                        onClick={mobileNav.onClose}
-                      />
-                      <ButtonWhatsappMobile />
-                    </VStack>
+                      <MenuItem minH="48px" justifyContent={"center"}>
+                        <CloseButton
+                          aria-label="Close menu"
+                          onClick={mobileNav.onClose}
+                        />
+                      </MenuItem>
+                      <MenuItem justifyContent={"center"}>
+                        <ButtonWhatsapp />
+                      </MenuItem>
+                    </MenuList>
                   </Menu>
                 </Box>
               </HStack>
