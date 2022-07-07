@@ -1,7 +1,7 @@
 import { Button, Link } from "@chakra-ui/react";
-import { BsFacebook } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 
-export default function ButtonFacebook() {
+export default function ButtonWhatsappMobile() {
   return (
     <Link style={{ textDecoration: "none" }} href="" isExternal>
       <Button
@@ -16,7 +16,7 @@ export default function ButtonFacebook() {
           "0px 1px 25px -5px rgb(72 186 119 / 100%), 0 10px 10px -5px rgb(72 186 119 / 43%)"
         }
       >
-        <BsFacebook />
+        <BsWhatsapp />
       </Button>
     </Link>
   );

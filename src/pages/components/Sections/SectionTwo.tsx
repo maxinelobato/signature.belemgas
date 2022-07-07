@@ -1,6 +1,7 @@
 import { Stack, Flex, Heading, Text, Image, Box } from "@chakra-ui/react";
 import ButtonSectionTwo from "../ButtonCTA/ButtonSectionTwo";
 import "@fontsource/krona-one";
+import "@fontsource/open-sans";
 
 export default function SectionTwo() {
   const Fade = require("react-reveal/Fade");
@@ -22,14 +23,14 @@ export default function SectionTwo() {
                 <Heading
                   textAlign={"left"}
                   fontSize="2xl"
-                  fontFamily={"Krona One"}
+                  fontFamily={"Open Sans"}
                   color="whiteAlpha.800"
                 >
                   Chame a Belém Gás no WhatsApp <br />
-                  <Text as="span" color="orange.400">
+                  <Text as="span">
                     {" "}
-                    Salve o nosso número{" "}
-                    <Text as="span" color="whiteAlpha.800">
+                    Salve o nosso número <br />
+                    <Text as="span" color="orange.400" fontFamily={"Krona One"}>
                       (91) 98725-0217
                     </Text>{" "}
                     nos seus contatos e sempre que precisar de Gás é só nos

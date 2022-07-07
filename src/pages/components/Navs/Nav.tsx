@@ -1,3 +1,4 @@
+import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   CloseButton,
@@ -6,11 +7,12 @@ import {
   IconButton,
   VStack,
   useDisclosure,
+  MenuButton,
+  Menu,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
-// import ButtonFacebook from "../ButtonCTA/ButtonFacebook";
-// import ButtonInstagram from "../ButtonCTA/ButtonInstagram";
 import ButtonWhatsapp from "../ButtonCTA/ButtonWhatsapp";
+import ButtonWhatsappMobile from "../ButtonCTA/ButtonWhatsappMobile";
 import LogoBelemGas from "../IdVisual/LogoBelemGas";
 
 // const innerBoxStyles = {
@@ -48,37 +50,39 @@ export default function Nav() {
                   <ButtonWhatsapp />
                 </HStack>
                 <Box display={{ base: "inline-flex", md: "none" }}>
-                  <IconButton
-                    display={{ base: "flex", md: "none" }}
-                    aria-label="Open Menu"
-                    fontSize="20px"
-                    colorScheme="green"
-                    icon={<AiOutlineMenu />}
-                    onClick={mobileNav.onOpen}
-                  />
-
-                  <VStack
-                    pos="absolute"
-                    top={0}
-                    left={0}
-                    right={0}
-                    display={mobileNav.isOpen ? "flex" : "none"}
-                    flexDirection="column"
-                    p={2}
-                    pb={4}
-                    m={2}
-                    color={"blackAlpha.900"}
-                    bg="whiteAlpha.800"
-                    spacing={3}
-                    rounded="sm"
-                    shadow="sm"
-                  >
-                    <CloseButton
-                      aria-label="Close menu"
-                      onClick={mobileNav.onClose}
+                  <Menu>
+                    <MenuButton
+                      as={IconButton}
+                      display={{ base: "flex", md: "none" }}
+                      aria-label="Open Menu"
+                      fontSize="20px"
+                      icon={<HamburgerIcon />}
+                      onClick={mobileNav.onOpen}
                     />
-                    <ButtonWhatsapp />
-                  </VStack>
+
+                    <VStack
+                      pos="absolute"
+                      top={0}
+                      left={0}
+                      right={0}
+                      display={mobileNav.isOpen ? "flex" : "none"}
+                      flexDirection="column"
+                      p={2}
+                      pb={4}
+                      m={2}
+                      color={"blackAlpha.900"}
+                      bg="whiteAlpha.800"
+                      spacing={3}
+                      rounded="sm"
+                      shadow="sm"
+                    >
+                      <CloseButton
+                        aria-label="Close menu"
+                        onClick={mobileNav.onClose}
+                      />
+                      <ButtonWhatsappMobile />
+                    </VStack>
+                  </Menu>
                 </Box>
               </HStack>
             </Flex>
