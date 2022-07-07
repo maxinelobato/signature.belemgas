@@ -16,7 +16,11 @@ export default function ButtonCallNow(props: ButtonProps) {
       justify="left"
       direction={{ base: "column", md: "row" }}
     >
-      <Link style={{ textDecoration: "none" }} href="" isExternal>
+      <Link
+        style={{ textDecoration: "none" }}
+        href="https://api.whatsapp.com/send?phone=5591987250217&text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20g%C3%A1s%2C%20te%20achei%20pelo%20google"
+        isExternal
+      >
         <Button
           {...props}
           as={motion.div}

@@ -4,7 +4,7 @@ import "@fontsource/open-sans";
 
 export default function SectionThree() {
   return (
-    <Box p={16} maxW="85rem" mx={"auto"}>
+    <Box p={16} maxW="50rem" mx={"auto"}>
       <Heading
         color={"brand.green800"}
         textAlign={"center"}
@@ -22,8 +22,8 @@ export default function SectionThree() {
           Cartão de Crédito / Débito / Pix
         </Text>
       </Heading>
-      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={{ base: 5, lg: 8 }}>
-        <Box maxW={"auto"} w={"full"} rounded={"md"} overflow={"hidden"}>
+      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={{ base: 2, lg: 4 }}>
+        <Box maxW={"10rem"} w={"full"} rounded={"md"} overflow={"hidden"}>
           <Image
             borderRadius="lg"
             objectFit="cover"
@@ -31,7 +31,7 @@ export default function SectionThree() {
             alt="..."
           />
         </Box>
-        <Box maxW={"auto"} w={"full"} rounded={"md"} overflow={"hidden"}>
+        <Box maxW={"10rem"} w={"full"} rounded={"md"} overflow={"hidden"}>
           <Image
             borderRadius="lg"
             objectFit="cover"
@@ -39,7 +39,7 @@ export default function SectionThree() {
             alt="..."
           />
         </Box>
-        <Box maxW={"auto"} w={"full"} rounded={"md"} overflow={"hidden"}>
+        <Box maxW={"10rem"} w={"full"} rounded={"md"} overflow={"hidden"}>
           <Image
             borderRadius="lg"
             objectFit="cover"
@@ -47,7 +47,7 @@ export default function SectionThree() {
             alt="..."
           />
         </Box>
-        <Box maxW={"auto"} rounded={"md"} overflow={"hidden"}>
+        <Box maxW={"10rem"} rounded={"md"} overflow={"hidden"}>
           <Image
             borderRadius="lg"
             objectFit="cover"
