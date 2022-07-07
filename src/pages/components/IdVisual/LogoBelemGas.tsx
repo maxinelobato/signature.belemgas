@@ -1,6 +1,6 @@
-import { ImageProps, Image, Link } from "@chakra-ui/react";
+import { Image, Link } from "@chakra-ui/react";
 
-export default function LogoBelemGas(props: ImageProps) {
+export default function LogoBelemGas() {
   const Zoom = require("react-reveal/Zoom");
 
   return (
@@ -11,7 +11,6 @@ export default function LogoBelemGas(props: ImageProps) {
           src="/img/logo1.svg"
           boxSize="sm"
           alt="Belém Gás"
-          {...props}
         />
       </Link>
     </Zoom>

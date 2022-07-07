@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-export default function ButtonCallNow(props: ButtonProps) {
+export default function ButtonCallNow() {
   return (
     <Stack
       spacing={4}
@@ -22,7 +22,6 @@ export default function ButtonCallNow(props: ButtonProps) {
         isExternal
       >
         <Button
-          {...props}
           as={motion.div}
           whileHover={{ scale: 1.1 }}
           variant="solid"

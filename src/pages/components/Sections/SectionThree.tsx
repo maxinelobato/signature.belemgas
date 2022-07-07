@@ -1,17 +1,10 @@
-import {
-  Image,
-  Box,
-  SimpleGrid,
-  Heading,
-  Text,
-  Center,
-} from "@chakra-ui/react";
+import { Image, Box, SimpleGrid, Heading, Text } from "@chakra-ui/react";
 import "@fontsource/krona-one";
 import "@fontsource/open-sans";
 
 export default function SectionThree() {
   return (
-    <Box p={16} maxW="60rem" mx={"auto"}>
+    <Box p={8} maxW="60rem" mx={"auto"}>
       <Heading
         color={"brand.green800"}
         textAlign={"center"}
@@ -29,7 +22,7 @@ export default function SectionThree() {
           Cartão de Crédito / Débito / Pix / Dinheiro à Vista
         </Text>
       </Heading>
-      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={{ base: 2, lg: 8 }}>
+      <SimpleGrid columns={{ base: 2, md: 4 }} spacing={{ base: 2, lg: 16 }}>
         <Box maxW={"10rem"} w={"full"} rounded={"md"} overflow={"hidden"}>
           <Image
             borderRadius="lg"
