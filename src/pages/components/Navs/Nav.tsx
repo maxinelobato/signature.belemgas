@@ -1,20 +1,17 @@
-import { AddIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   CloseButton,
   Flex,
   HStack,
   IconButton,
-  VStack,
   useDisclosure,
   MenuButton,
   Menu,
   MenuList,
   MenuItem,
 } from "@chakra-ui/react";
-import { AiOutlineMenu } from "react-icons/ai";
 import ButtonWhatsapp from "../ButtonCTA/ButtonWhatsapp";
-import ButtonWhatsappMobile from "../ButtonCTA/ButtonWhatsappMobile";
 import LogoBelemGas from "../IdVisual/LogoBelemGas";
 
 // const innerBoxStyles = {
