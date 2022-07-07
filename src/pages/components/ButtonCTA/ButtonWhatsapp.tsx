@@ -22,7 +22,7 @@ export default function ButtonWhatsapp() {
         }
         leftIcon={<BsWhatsapp size={"1.4rem"} />}
       >
-        Peça seu Gás
+        Peça seu Gás!
       </Button>
     </Link>
   );

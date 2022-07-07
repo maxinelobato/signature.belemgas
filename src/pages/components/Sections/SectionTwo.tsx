@@ -1,7 +1,7 @@
 import { Stack, Flex, Heading, Text, Image, Box } from "@chakra-ui/react";
-import ButtonSectionTwo from "../ButtonCTA/ButtonSectionTwo";
 import "@fontsource/krona-one";
 import "@fontsource/open-sans";
+import ButtonCallNow from "../ButtonCTA/ButtonCallNow";
 
 export default function SectionTwo() {
   const Fade = require("react-reveal/Fade");
@@ -38,7 +38,7 @@ export default function SectionTwo() {
                   </Text>
                 </Heading>
               </Fade>
-              <ButtonSectionTwo />
+              <ButtonCallNow />
             </Stack>
           </Box>
         </Flex>
