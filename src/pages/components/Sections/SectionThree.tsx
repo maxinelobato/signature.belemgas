@@ -19,7 +19,7 @@ export default function SectionThree() {
           fontWeight={100}
           color="brand.green800"
         >
-          Cartão de Crédito / Débito / Pix
+          Cartão de Crédito / Débito / Pix / Dinheiro à Vista
         </Text>
       </Heading>
       <SimpleGrid columns={{ base: 2, md: 4 }} spacing={{ base: 2, lg: 4 }}>
