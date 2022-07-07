@@ -10,18 +10,18 @@ export default function SectionTwo() {
         <Flex flex={1}>
           <Image
             boxSize={"100%"}
-            objectFit={"contain"}
+            objectFit={"cover"}
             alt={"Delivery Belém Gás"}
             src={"/img/bgentregador.svg"}
           />
         </Flex>
         <Flex p={16} align={"center"} justifyContent={"center"}>
-          <Box rounded="lg" p={8} maxW="40rem">
+          <Box rounded={6} p={8} maxW="40rem">
             <Stack spacing={6} w={"full"} maxW={"lg"}>
               <Fade duration={600} left>
                 <Heading
                   textAlign={"left"}
-                  fontSize="3xl"
+                  fontSize="2xl"
                   fontFamily={"Krona One"}
                   color="whiteAlpha.800"
                 >
