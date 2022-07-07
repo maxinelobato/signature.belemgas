@@ -31,7 +31,7 @@ export default function SectionTwo() {
                     {" "}
                     Salve o nosso número <br />
                     <Text as="span" color="orange.400" fontFamily={"Krona One"}>
-                      (91) 98725-0217
+                      (91) 98145 0356
                     </Text>{" "}
                     nos seus contatos e sempre que precisar de Gás é só nos
                     chamar que irá chegar rapidinho!

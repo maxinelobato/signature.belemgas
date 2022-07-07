@@ -24,7 +24,7 @@ export default function ButtonFramer() {
     >
       <Link
         style={{ textDecoration: "none" }}
-        href="https://api.whatsapp.com/send?phone=5591987250217&text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20g%C3%A1s%2C%20te%20achei%20pelo%20google"
+        href="https://api.whatsapp.com/send?phone=5591981450356&text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20g%C3%A1s%2C%20te%20achei%20pelo%20google"
         isExternal
       >
         <IconButton
@@ -33,7 +33,7 @@ export default function ButtonFramer() {
           display="flex"
           transition="0.1s linear"
           bgGradient="linear(to-l, whatsapp.500, whatsapp.400)"
-          aria-label="WhatsApp"
+          aria-label="IconButton"
           size="sm"
           icon={<BsWhatsapp size={20} />}
           bgColor="whatsapp.500"
