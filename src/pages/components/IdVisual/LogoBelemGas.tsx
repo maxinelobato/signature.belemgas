@@ -7,7 +7,7 @@ export default function LogoBelemGas() {
     <Zoom duration={600}>
       <Link href="#">
         <Image
-          css={{ width: "100%", height: "auto", maxWidth: "300px" }}
+          style={{ width: "100%", height: "auto", maxWidth: "300px" }}
           src="/img/logo1.svg"
           boxSize="sm"
           alt="Belém Gás"

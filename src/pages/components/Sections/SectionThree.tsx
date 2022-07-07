@@ -23,38 +23,30 @@ export default function SectionThree() {
         </Text>
       </Heading>
       <SimpleGrid columns={{ base: 2, md: 4 }} spacing={{ base: 2, lg: 16 }}>
-        <Box maxW={"10rem"} w={"full"} rounded={"md"} overflow={"hidden"}>
-          <Image
-            borderRadius="lg"
-            objectFit="cover"
-            src="/img/mastercard.svg"
-            alt="..."
-          />
-        </Box>
-        <Box maxW={"10rem"} w={"full"} rounded={"md"} overflow={"hidden"}>
-          <Image
-            borderRadius="lg"
-            objectFit="cover"
-            src="/img/visa.svg"
-            alt="..."
-          />
-        </Box>
-        <Box maxW={"10rem"} w={"full"} rounded={"md"} overflow={"hidden"}>
-          <Image
-            borderRadius="lg"
-            objectFit="cover"
-            src="/img/elo.svg"
-            alt="..."
-          />
-        </Box>
-        <Box maxW={"10rem"} rounded={"md"} overflow={"hidden"}>
-          <Image
-            borderRadius="lg"
-            objectFit="cover"
-            src="/img/pix.svg"
-            alt="..."
-          />
-        </Box>
+        <Image
+          borderRadius="lg"
+          objectFit="cover"
+          src="/img/mastercard.svg"
+          alt="..."
+        />
+        <Image
+          borderRadius="lg"
+          objectFit="cover"
+          src="/img/visa.svg"
+          alt="..."
+        />
+        <Image
+          borderRadius="lg"
+          objectFit="cover"
+          src="/img/elo.svg"
+          alt="..."
+        />
+        <Image
+          borderRadius="lg"
+          objectFit="cover"
+          src="/img/pix.svg"
+          alt="..."
+        />
       </SimpleGrid>
     </Box>
   );
