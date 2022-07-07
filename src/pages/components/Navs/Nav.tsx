@@ -1,4 +1,3 @@
-import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   CloseButton,
@@ -6,13 +5,11 @@ import {
   HStack,
   IconButton,
   useDisclosure,
-  MenuButton,
-  Menu,
-  MenuList,
-  MenuItem,
+  VStack,
 } from "@chakra-ui/react";
 import ButtonWhatsapp from "../ButtonCTA/ButtonWhatsapp";
 import LogoBelemGas from "../IdVisual/LogoBelemGas";
+import { AiOutlineMenu } from "react-icons/ai";
 
 // const innerBoxStyles = {
 //   textShadow: "0 0 20px white",
@@ -48,32 +45,37 @@ export default function Nav() {
                 <ButtonWhatsapp />
               </HStack>
               <Box display={{ base: "inline-flex", md: "none" }}>
-                <Menu>
-                  <MenuButton
-                    as={IconButton}
-                    display={{ base: "flex", md: "none" }}
-                    aria-label="Open Menu"
-                    fontSize="20px"
-                    bgColor={"green.800"}
-                    icon={<HamburgerIcon />}
-                    onClick={mobileNav.onOpen}
+                <IconButton
+                  display={{ base: "flex", md: "none" }}
+                  aria-label="Open Menu"
+                  fontSize="20px"
+                  bgColor="green.800"
+                  icon={<AiOutlineMenu />}
+                  onClick={mobileNav.onOpen}
+                />
+
+                <VStack
+                  pos="absolute"
+                  top={0}
+                  left={0}
+                  right={0}
+                  display={mobileNav.isOpen ? "flex" : "none"}
+                  flexDirection="column"
+                  p={2}
+                  pb={4}
+                  m={2}
+                  color={"whiteAlpha.900"}
+                  bg="green.800"
+                  spacing={8}
+                  rounded="lg"
+                  shadow="sm"
+                >
+                  <CloseButton
+                    aria-label="Close menu"
+                    onClick={mobileNav.onClose}
                   />
-                  <MenuList
-                    bgColor={"green.800"}
-                    display={mobileNav.isOpen ? "flex" : "none"}
-                    flexDirection="column"
-                  >
-                    <MenuItem minH="48px" justifyContent={"center"}>
-                      <CloseButton
-                        aria-label="Close menu"
-                        onClick={mobileNav.onClose}
-                      />
-                    </MenuItem>
-                    <MenuItem justifyContent={"center"}>
-                      <ButtonWhatsapp />
-                    </MenuItem>
-                  </MenuList>
-                </Menu>
+                  <ButtonWhatsapp />
+                </VStack>
               </Box>
             </HStack>
           </Flex>
