@@ -7,6 +7,19 @@ export default class Document extends NextDocument {
     return (
       <Html lang="pt-br">
         <Head />
+        <title>Distribuidora Belém Gás</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="A melhor distribuidora de Gás do Estado do Pará"
+        />
+        <meta property="og:title" content="Distribuidora Belém Gás" />
+        <meta
+          property="og:description"
+          content="A melhor distribuidora de Gás do Estado do Pará"
+        />
+        <meta property="og:url" content="https://belemgas.vercel.app/" />
+        <meta property="og:type" content="landingpage" />
         <body>
           {/* 👇 Here's the script */}
           {/* <noscript>
@@ -26,7 +39,6 @@ export default class Document extends NextDocument {
               style={{ display: "none", visibility: "hidden" }}
             />
           </noscript>
-          <title>Distribuidora Belém Gás</title>
           <Main />
           <NextScript />
         </body>
