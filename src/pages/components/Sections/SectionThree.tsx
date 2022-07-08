@@ -26,25 +26,25 @@ export default function SectionThree() {
         <Image
           borderRadius="lg"
           objectFit="cover"
-          src="/img/mastercard.svg"
+          src="/img/mastercard.png"
           alt="..."
         />
         <Image
           borderRadius="lg"
           objectFit="cover"
-          src="/img/visa.svg"
+          src="/img/visa.png"
           alt="..."
         />
         <Image
           borderRadius="lg"
           objectFit="cover"
-          src="/img/elo.svg"
+          src="/img/elo.png"
           alt="..."
         />
         <Image
           borderRadius="lg"
           objectFit="cover"
-          src="/img/pix.svg"
+          src="/img/pix.png"
           alt="..."
         />
       </SimpleGrid>

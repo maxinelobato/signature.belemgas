@@ -13,7 +13,7 @@ export default function SectionTwo() {
             boxSize={"100%"}
             objectFit={"cover"}
             alt={"Delivery Belém Gás"}
-            src={"/img/bgentregador.svg"}
+            src={"/img/bgentregador.png"}
           />
         </Flex>
         <Flex p={16} align={"center"} justifyContent={"center"}>

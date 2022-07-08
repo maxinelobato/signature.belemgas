@@ -8,7 +8,7 @@ export default function LogoBelemGas() {
       <Link href="#">
         <Image
           style={{ width: "100%", height: "auto", maxWidth: "300px" }}
-          src="/img/logo1.svg"
+          src="/img/logo1.png"
           boxSize="sm"
           alt="Belém Gás"
         />
