@@ -2,7 +2,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import { extendTheme } from "@chakra-ui/react";
 // import ButtonFramer from "./components/ButtonCTA/ButtonFramer";
-// import FBPixel from "./components/Analytics/FBPixel";
+import FBPixel from "./components/Analytics/FBPixel";
 // import GAnalytics from "./components/Analytics/GAnalytics";
 import GTag from "./components/Analytics/GTag";
 
@@ -23,8 +23,8 @@ const theme = extendTheme({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme} resetCSS>
-      {/* <FBPixel />
-      <GAnalytics /> */}
+      <FBPixel />
+      {/* <GAnalytics /> */}
       <GTag />
       {/* <ButtonFramer /> */}
       <Component {...pageProps} />
